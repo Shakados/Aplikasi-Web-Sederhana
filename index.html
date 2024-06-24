@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suhu Converter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Suhu Converter</h2>
+        <form id="converter-form">
+            <div class="input-group">
+                <label for="temperature">Masukkan suhu:</label>
+                <input type="text" id="temperature" name="temperature" placeholder="Contoh: 25" required>
+            </div>
+            <div class="input-group">
+                <label>Jenis konversi:</label>
+                <div>
+                    <input type="radio" id="to-fahrenheit" name="conversion" value="toFahrenheit" checked>
+                    <label for="to-fahrenheit">Celsius ke Fahrenheit</label>
+                </div>
+                <div>
+                    <input type="radio" id="to-celsius" name="conversion" value="toCelsius">
+                    <label for="to-celsius">Fahrenheit ke Celsius</label>
+                </div>
+            </div>
+            <button type="submit">Konversi</button>
+        </form>
+        <div id="result"></div>
+        <div id="error-msg"></div>
+        <!-- Tambahkan elemen gambar untuk menampilkan ikon suhu -->
+        <div id="icon"></div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

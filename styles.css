@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+h2 {
+    text-align: center;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-group input[type="text"],
+.input-group input[type="radio"] {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.input-group input[type="radio"] {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#error-msg {
+    color: red;
+    font-style: italic;
+    margin-top: 10px;
+}
+
+/* Animasi sederhana saat hasil konversi muncul */
+#result {
+    animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Style untuk gambar ikon suhu */
+#icon {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#icon img {
+    width: 50px;
+    height: auto;
+}
